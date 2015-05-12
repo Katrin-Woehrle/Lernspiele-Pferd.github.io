@@ -312,7 +312,7 @@ function nach_Spieleinstellungen_fragen()
     einstellungsseite_zaehler++;
     schreibe_html_ueberschriften("Lernspiel: Einstellungen");
     
-    output_fenster.document.write ("<br><u><b><font size=\"+2\">Thema 1: Kopfdarm</font></b></u><br>");
+    output_fenster.document.write ("<br><u><b><font size=\"+2\">Kopfdarm Teil 2</font></b></u><br>");
     output_fenster.document.write ("<br><u><b><font size=\"+1\">Einstellungen für das Spiel</font></b></u>");
     output_fenster.document.write ("<form name=\"form_SpielEinstellungen\">\n");
     output_fenster.document.write ("<br><select name=\"select_AnzahlDerSpieler\" size=\"1\" onChange=\"top.anzahl_der_Spieler_wechselt(document.form_SpielEinstellungen.select_AnzahlDerSpieler.value);\"> \n");
@@ -343,7 +343,7 @@ function nach_Spieleinstellungen_fragen()
         anzahl_zusammenpassende_bilder = akt_kopien + 1;
     }
     anzahl_der_bilder = (akt_kopien + 1) * verwendete_bilder;    
-    output_fenster.document.write ('<br><input type="button" name="button_SpielStarten" value="Starte das Lernspiel zu Thema 1: Kopfdarm" onClick="top.starte_spiel();"><br>\n');
+    output_fenster.document.write ('<br><input type="button" name="button_SpielStarten" value="Starte das Lernspiel Kopfdarm Teil 2" onClick="top.starte_spiel();"><br>\n');
     output_fenster.document.write ('<br><input type="button" name="button_BilderZeigen" value="Zeige alle Fragen und Antworten" onClick="top.zeige_bilder();"><br>\n');
     output_fenster.document.write('<br><a href="/index.html">Zurück zur Startseite</a><br>\n');
     
