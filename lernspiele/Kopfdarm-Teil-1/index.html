@@ -407,9 +407,9 @@ function schreibe_html_ueberschriften(title_string)
     if (!window.output_fenster)
 	{
 		output_fenster = window.open("", "output_fenster", "width=300,height=400,left=100,top=200");
-		output_fenster.document.write("<form name=\"form_output_fenster\">\n");
-		output_fenster.document.write ("<p>ein neues Fenster!<br>(blablabla)</p>");
-		output_fenster.document.write ("</form>\n");		
+		document.write("<form name=\"form_output_fenster\">\n");
+		document.write ("<p>ein neues Fenster!<br>(blablabla)</p>");
+		document.write ("</form>\n");		
 		output_fenster.focus();
 	}
 
