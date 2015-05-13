@@ -409,6 +409,8 @@ function schreibe_html_ueberschriften(title_string)
 		document.write ("<p>ein neues Fenster!<br>(blablabla)</p>");		
 		document.write ("</form>\n");		
 	}
+	
+    output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
 
     output_fenster.document.close();
     output_fenster.document.open ("text/html", "replace");    
