@@ -153,20 +153,20 @@ function zeichne_html_spiel()
 {
     
     schreibe_html_ueberschriften("Memoryspiel: Das Spiel läuft");
-    output_fenster.document.write ("<form name=\"form_Game\">\n");
-    output_fenster.document.write ("<font size=\"-1\"5>Runde </font> <input type=\"text\" name=\"input_rounds\" size=\"2\" disabled></input> \n");
+    document.write ("<form name=\"form_Game\">\n");
+    document.write ("<font size=\"-1\"5>Runde </font> <input type=\"text\" name=\"input_rounds\" size=\"2\" disabled></input> \n");
    
     for (i = 1; i <= akt_spieleranzahl; i++)
     {
-        output_fenster.document.write ("<font size=\"-1\">Spieler " + i + ": </font><input type=\"text\" name=\"eingabe_spieler" + i + "\" size=\"3\" disabled></input> \n");
+        document.write ("<font size=\"-1\">Spieler " + i + ": </font><input type=\"text\" name=\"eingabe_spieler" + i + "\" size=\"3\" disabled></input> \n");
     }
  
-     output_fenster.document.write ("<font size=2 color=\"red\">Spieler Nr.<input type=\"text\" name=\"input_akt_spieler\" size=\"2\" disabled></input> ist dran! \n </font>");
+     document.write ("<font size=2 color=\"red\">Spieler Nr.<input type=\"text\" name=\"input_akt_spieler\" size=\"2\" disabled></input> ist dran! \n </font>");
    
-     output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Beende das Memoryspiel\" onClick=\"top.beende_spiel();\">&nbsp;");
+     document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Beende das Memoryspiel\" onClick=\"top.beende_spiel();\">&nbsp;");
   
-     output_fenster.document.write ("<font size=1 color=\"black\">Kopfdarm Teil 1, Lernspiel von Katrin Wöhrle</font>");
-     output_fenster.document.write ("</form>\n");
+     document.write ("<font size=1 color=\"black\">Kopfdarm Teil 1, Lernspiel von Katrin Wöhrle</font>");
+     document.write ("</form>\n");
     var alt_text;                              
     for (i = 0; i < anzahl_der_bilder; i++)
     {         
@@ -176,18 +176,18 @@ function zeichne_html_spiel()
              alt_text += ":_";    
              alt_text += gemischte_bilder[indexes_array[i]];
          }
-         output_fenster.document.write ('<img src="' + verdecktes_bild_name + '" height= "195" width="195" border="1" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
+         document.write ('<img src="' + verdecktes_bild_name + '" height= "195" width="195" border="1" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
     }
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function ausgabe_aktueller_spiel_werte()
 {
-    output_fenster.document.form_Game.input_akt_spieler.value = akt_spieler;
-    output_fenster.document.form_Game.input_rounds.value = runden_zaehler;
+    document.form_Game.input_akt_spieler.value = akt_spieler;
+    document.form_Game.input_rounds.value = runden_zaehler;
     for (i = 1; i <= akt_spieleranzahl; i++)
     {
         var element_name = "eingabe_spieler" + i;
-        var input_elements = output_fenster.document.getElementsByName(element_name);
+        var input_elements = document.getElementsByName(element_name);
         if (input_elements)
         {
             if (i == akt_spieler)
@@ -224,7 +224,7 @@ function show_hidden_image (clicked_image)
         if (clicked_image.src.search(verdecktes_bild_name) != -1)
         {
             displayed_picture_index = indexes_array[clicked_index];
-            output_fenster.document.images[clicked_index].src = gemischte_bilder[displayed_picture_index];
+            document.images[clicked_index].src = gemischte_bilder[displayed_picture_index];
             zuletzt_angeklickt_index[aufgedeckte_bilder_in_der_runde] = clicked_index;
             aufgedeckte_bilder_in_der_runde++;
             if (aufgedeckte_bilder_in_der_runde == anzahl_zusammenpassende_bilder)
@@ -280,7 +280,7 @@ function show_hidden_image (clicked_image)
     {       
         for (i = 0;   i < anzahl_zusammenpassende_bilder;   i++)
         {
-            output_fenster.document.images[zuletzt_angeklickt_index[i]].src = verdecktes_bild_name;
+            document.images[zuletzt_angeklickt_index[i]].src = verdecktes_bild_name;
             zuletzt_angeklickt_index[i] = -1;
         }
         aufgedeckte_bilder_in_der_runde = 0;
@@ -319,19 +319,19 @@ function anzahl_der_Spieler_wechselt(new_value)
 function nach_Spieleinstellungen_fragen()
 {
     einstellungsseite_zaehler++;
-    //schreibe_html_ueberschriften("Lernspiel: Einstellungen");
+    schreibe_html_ueberschriften("Lernspiel: Einstellungen");
     
-    output_fenster.document.write ("<br><u><b><font size=\"+2\">Kopfdarm Teil 1</font></b></u><br>");
-    output_fenster.document.write ("<br><u><b><font size=\"+1\">Einstellungen für das Spiel</font></b></u>");
-    output_fenster.document.write ("<form name=\"form_SpielEinstellungen\">\n");
-    output_fenster.document.write ("<br><select name=\"select_AnzahlDerSpieler\" size=\"1\" onChange=\"top.anzahl_der_Spieler_wechselt(document.form_SpielEinstellungen.select_AnzahlDerSpieler.value);\"> \n");
+    document.write ("<br><u><b><font size=\"+2\">Kopfdarm Teil 1</font></b></u><br>");
+    document.write ("<br><u><b><font size=\"+1\">Einstellungen für das Spiel</font></b></u>");
+    document.write ("<form name=\"form_SpielEinstellungen\">\n");
+    document.write ("<br><select name=\"select_AnzahlDerSpieler\" size=\"1\" onChange=\"top.anzahl_der_Spieler_wechselt(document.form_SpielEinstellungen.select_AnzahlDerSpieler.value);\"> \n");
     for (i=1; i <= max_spieler; i++)
     {   
-        output_fenster.document.write ('<option value="' + i + '">' + i + '</option>\n');
+        document.write ('<option value="' + i + '">' + i + '</option>\n');
     }
-    output_fenster.document.write ("</select>\n");
-    output_fenster.document.form_SpielEinstellungen.select_AnzahlDerSpieler.selectedIndex = akt_spieleranzahl - 1;
-    output_fenster.document.write ("Wieviele Spieler spielen mit? <br>\n");
+    document.write ("</select>\n");
+    document.form_SpielEinstellungen.select_AnzahlDerSpieler.selectedIndex = akt_spieleranzahl - 1;
+    document.write ("Wieviele Spieler spielen mit? <br>\n");
    
     var min_copies = 1;
     if (max_zusammenpassende_bilder >= 2)
@@ -352,30 +352,30 @@ function nach_Spieleinstellungen_fragen()
         anzahl_zusammenpassende_bilder = akt_kopien + 1;
     }
     anzahl_der_bilder = (akt_kopien + 1) * verwendete_bilder;    
-    output_fenster.document.write ('<br><input type="button" name="button_SpielStarten" value="Starte das Lernspiel Kopfdarm Teil 1" onClick="top.starte_spiel();"><br>\n');
-    output_fenster.document.write ('<br><input type="button" name="button_BilderZeigen" value="Zeige alle Fragen und Antworten" onClick="top.zeige_bilder();"><br>\n');
-    output_fenster.document.write('<br><a href="http://lernspiele-pferd.github.io/">Zurück zur Startseite</a><br>\n');
+    document.write ('<br><input type="button" name="button_SpielStarten" value="Starte das Lernspiel Kopfdarm Teil 1" onClick="top.starte_spiel();"><br>\n');
+    document.write ('<br><input type="button" name="button_BilderZeigen" value="Zeige alle Fragen und Antworten" onClick="top.zeige_bilder();"><br>\n');
+    document.write('<br><a href="http://lernspiele-pferd.github.io/">Zurück zur Startseite</a><br>\n');
     
        
-    output_fenster.document.write ("</form>\n");
+    document.write ("</form>\n");
  } 
 //------------------------------------------------------------------------------------------------------------------------
 //zeigeBilder.js
 //-----------------------   zeige_bilder ()   ---------------------------
 function zeige_bilder()
 {    
-    //schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
-    output_fenster.document.write ("<form name=\"form_bilder_anzeigen\">\n");
-    output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
+    schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
+    document.write ("<form name=\"form_bilder_anzeigen\">\n");
+    document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
   
-    output_fenster.document.write ("</form>\n");
+    document.write ("</form>\n");
     var alt_text;                              
     for (i = 0; i < anzahl_der_vordefinierten_bilder; i++)
     {         
          alt_text = "Bild_" + (i+1) + ":_" + vordefinierte_bilder_namen[i];
-         output_fenster.document.write ('<img src="' + vordefinierte_bilder_namen[i] + '" height= "200" width="200" border="1" alt="' + alt_text + '" name="image' + i + '" >');
+         document.write ('<img src="' + vordefinierte_bilder_namen[i] + '" height= "200" width="200" border="1" alt="' + alt_text + '" name="image' + i + '" >');
     }
-    output_fenster.document.write ("</form>\n");
+    document.write ("</form>\n");
 }
 //----------------------------------------------------------------------------------------------------------------------------
 //variablen.js
