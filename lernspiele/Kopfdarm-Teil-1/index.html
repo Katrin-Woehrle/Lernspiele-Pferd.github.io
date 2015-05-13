@@ -407,7 +407,9 @@ function schreibe_html_ueberschriften(title_string)
     if (!window.output_fenster)
 	{
 		output_fenster = window.open("", "Zweitfenster", "width=300, height=400");
-		output_fenster.document.write("<br><a href="http://lernspiele-pferd.github.io/lernspiele/Kopfdarm-Teil-1/index.html">Kofdarm 1 Index</a><br>\n");
+		output_fenster.document.write("<form name=\"form_output_fenster\">\n");
+		output_fenster.document.write ("<p>ein neues Fenster!<br>(blablabla)</p>");
+		output_fenster.document.write ("</form>\n");		
 		output_fenster.focus();
 	}
 
