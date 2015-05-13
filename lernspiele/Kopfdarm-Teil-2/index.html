@@ -1,4 +1,4 @@
-<HEAD>
+﻿<HEAD>
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
 <TITLE>Lernspiel von Katrin Wöhrle</TITLE>
 </HEAD>
@@ -143,7 +143,7 @@ function init_variablen_vor_neuem_spiel()
 function zeichne_html_spiel()
 {
     
-    schreibe_html_ueberschriften("Memoryspiel: Das Spiel läuft");
+    //schreibe_html_ueberschriften("Memoryspiel: Das Spiel läuft");
     output_fenster.document.write ("<form name=\"form_Game\">\n");
     output_fenster.document.write ("<font size=\"-1\"5>Runde </font> <input type=\"text\" name=\"input_rounds\" size=\"2\" disabled></input> \n");
    
@@ -310,7 +310,7 @@ function anzahl_der_Spieler_wechselt(new_value)
 function nach_Spieleinstellungen_fragen()
 {
     einstellungsseite_zaehler++;
-    schreibe_html_ueberschriften("Lernspiel: Einstellungen");
+    //schreibe_html_ueberschriften("Lernspiel: Einstellungen");
     
     output_fenster.document.write ("<br><u><b><font size=\"+2\">Kopfdarm Teil 2</font></b></u><br>");
     output_fenster.document.write ("<br><u><b><font size=\"+1\">Einstellungen für das Spiel</font></b></u>");
@@ -355,7 +355,7 @@ function nach_Spieleinstellungen_fragen()
 //-----------------------   zeige_bilder ()   ---------------------------
 function zeige_bilder()
 {    
-    schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
+    //schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
     output_fenster.document.write ("<form name=\"form_bilder_anzeigen\">\n");
     output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
   
