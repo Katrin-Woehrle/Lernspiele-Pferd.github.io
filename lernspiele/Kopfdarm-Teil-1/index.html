@@ -319,7 +319,7 @@ function anzahl_der_Spieler_wechselt(new_value)
 function nach_Spieleinstellungen_fragen()
 {
     einstellungsseite_zaehler++;
-    schreibe_html_ueberschriften("Lernspiel: Einstellungen");
+    //schreibe_html_ueberschriften("Lernspiel: Einstellungen");
     
     output_fenster.document.write ("<br><u><b><font size=\"+2\">Kopfdarm Teil 1</font></b></u><br>");
     output_fenster.document.write ("<br><u><b><font size=\"+1\">Einstellungen für das Spiel</font></b></u>");
@@ -364,7 +364,7 @@ function nach_Spieleinstellungen_fragen()
 //-----------------------   zeige_bilder ()   ---------------------------
 function zeige_bilder()
 {    
-    schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
+    //schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
     output_fenster.document.write ("<form name=\"form_bilder_anzeigen\">\n");
     output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
   
