@@ -401,26 +401,26 @@ var aufgedeckte_bilder_in_der_runde;
 var einstellungsseite_zaehler = 0; 
    
  //-----------------------   schreibe_html_ueberschriften ()   ---------------------------
-//function schreibe_html_ueberschriften(title_string)
-//{
-//	output_fenster = window.open("", "output_fenster", "width=300,height=400,left=100,top=200");
-//
-//    if (!window.output_fenster)
-//	{
-//		document.write("<form name=\"form_output_fenster\">\n");
-//		document.write ("<p>ein neues Fenster!<br>(blablabla)</p>");
-//		document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");		
-//		document.write ("</form>\n");		
-//	}    
-    //output_fenster.document.close();
-    //output_fenster.document.open ("text/html", "replace");    
-    //output_fenster.document.bgColor = "#A0A0FF";
-    //document.title = title_string;
-    //for (i = 0;   i < headlines.length;   i++)
-    //{
-    //    output_fenster.document.write (headlines[i]);
-    //}
-//}
+function schreibe_html_ueberschriften(title_string)
+{
+	output_fenster = window.open("", "output_fenster", "width=300,height=400,left=100,top=200");
+
+    if (!window.output_fenster)
+	{
+		document.write("<form name=\"form_output_fenster\">\n");
+		document.write ("<p>ein neues Fenster!<br>(blablabla)</p>");
+		document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");		
+		document.write ("</form>\n");		
+	}    
+    output_fenster.document.close();
+    output_fenster.document.open ("text/html", "replace");    
+    output_fenster.document.bgColor = "#A0A0FF";
+    document.title = title_string;
+    for (i = 0;   i < headlines.length;   i++)
+    {
+        output_fenster.document.write (headlines[i]);
+    }
+}
 
 </script>
 
