@@ -247,7 +247,7 @@ function ausgabe_aktueller_spiel_werte()
                 else
                 {
                     input_elements[0].value =
-                         "Aufgedeckte Bilder zudecken.   " + punkte_des_spielers[i - 1];
+                         "Bilder zudecken.   " + punkte_des_spielers[i - 1];
                 }
                 input_elements[0].focus();
                 input_elements[0].select();
@@ -310,11 +310,11 @@ function show_hidden_image (clicked_image)
                         ausgabe_aktueller_spiel_werte();   
                         if (akt_spieleranzahl == 1)
                         {
-                            alert ("!!! Herzlichen Glückwunsch !!!\n Du hast alles richtig gefunden. \n Drücke OK um ein neues Spiel zu starten.");
+                            alert ("Herzlichen Glückwunsch !\n Du hast alle Karten richtig zugeordnet. \n Drücke OK um ein neues Spiel zu starten.");
                         }
                         else
                         {
-                            alert ("!!! Herzlichen Glückwunsch !!!\n Ihr habt alles richtig gefunden. \n Drückt OK um ein neues Spiel zu starten.");
+                            alert ("Herzlichen Glückwunsch !\n Ihr habt alle Karten richtig zugeordnet. "' + akt_spieler + '" hat gewonnen! \n Drückt OK um ein neues Spiel zu starten.");
                         }
                         nach_Spieleinstellungen_fragen();
                         return;
