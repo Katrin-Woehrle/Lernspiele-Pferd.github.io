@@ -4,132 +4,12 @@
 </HEAD>
 <script src="bildernamen.js"      type="text/javascript"></script>
 <script src="lernspielScript.js"      type="text/javascript"></script>
+<script src="spielEinstellungen.js"      type="text/javascript"></script>
 
 <script language="JavaScript">
 
-//------------------------------------------------------------------------------
-//bildernamen.js
-
-//var headlines = new Array();
-//var i = 0;
-//headlines[i++]='<center><font size="-2">Thema 1: Kopfdarm, Lernspiel von Katrin Wöhrle</font></center>';
-
-//var zeige_bild_name = false;
-
-//var max_zusammenpassende_bilder = 2;
-
-//var verdecktes_bild_name = "bilder-teil-1/verdeckt.png";   
-
-//var vordefinierte_bilder_namen = new Array();
-
-//i = 0;
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_1.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_1.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_2.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_2.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_3.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_3.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_4.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_4.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_5.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_5.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_6.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_6.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_7.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_7.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_8.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_8.png";
-
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_frage_9.png";
-//vordefinierte_bilder_namen[i++] = "bilder-teil-1/kopfdarm_antwort_9.png";
-
-//---------------------------------------------------------------------------------------------------
-function anzahl_der_Spieler_wechselt(new_value)
-{
-    akt_spieleranzahl = parseInt(new_value);
-    nach_Spieleinstellungen_fragen();
-}
-
-//---------------------------------------------------
-
-function nach_Spieleinstellungen_fragen()
-{
-    einstellungsseite_zaehler++;
-
-    schreibe_html_ueberschriften("Lernspiel: Einstellungen");
-
-    output_fenster.document.write ("<br><u><b><font size=\"+1\">Einstellungen für das Spiel</font></b></u>");
-
-    output_fenster.document.write ("<form name=\"form_SpielEinstellungen\">\n");
-
-    output_fenster.document.write ("<br><select name=\"select_AnzahlDerSpieler\" size=\"1\" onChange=\"top.anzahl_der_Spieler_wechselt(document.form_SpielEinstellungen.select_AnzahlDerSpieler.value);\"> \n");
-    for (i=1; i <= max_spieler; i++)
-    {   
-        output_fenster.document.write ('<option value="' + i + '">' + i + '</option>\n');
-    }
-    output_fenster.document.write ("</select>\n");
-    output_fenster.document.form_SpielEinstellungen.select_AnzahlDerSpieler.selectedIndex = akt_spieleranzahl - 1;
-    output_fenster.document.write ("Wieviele Spieler spielen mit? <br>\n");
-   
-    var min_copies = 1;
-    if (max_zusammenpassende_bilder >= 2)
-    {
-        min_copies = 0;
-        if (einstellungsseite_zaehler == 1)
-        {
-            akt_kopien = 0;
-        }
-    }    
-   
-    if (akt_kopien == 0)
-    {
-        anzahl_zusammenpassende_bilder = set_matching_images;               
-    }
-    else
-    {
-        anzahl_zusammenpassende_bilder = akt_kopien + 1;
-    }
-
-    anzahl_der_bilder = (akt_kopien + 1) * verwendete_bilder;    
-
-    output_fenster.document.write ('<br><input type="button" name="button_SpielStarten" value="Starte das Lernspiel zu Thema 1: Kopfdarm" onClick="top.starte_spiel();"><br>\n');
-    output_fenster.document.write ('<br><input type="button" name="button_BilderZeigen" value="Zeige alle Fragen und Antworten" onClick="top.zeige_bilder();"><br>\n');
-       
-    output_fenster.document.write ("</form>\n");
- } 
-
-//------------------------------------------------------------------------------------------------------------------------
-//zeigeBilder.js
-
-//-----------------------   zeige_bilder ()   ---------------------------
-
-function zeige_bilder()
-{    
-    schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
-
-    output_fenster.document.write ("<form name=\"form_bilder_anzeigen\">\n");
-
-    output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
-  
-    output_fenster.document.write ("</form>\n");
-
-    var alt_text;                              
-    for (i = 0; i < anzahl_der_vordefinierten_bilder; i++)
-    {         
-         alt_text = "Bild_" + (i+1) + ":_" + vordefinierte_bilder_namen[i];
-         output_fenster.document.write ('<img src="' + vordefinierte_bilder_namen[i] + '" height= "200" width="200" border="1" alt="' + alt_text + '" name="image' + i + '" >');
-    }
-
-    output_fenster.document.write ("</form>\n");
-}
+// ---------------------   START --------------------------------------------
+nach_Spieleinstellungen_fragen();
 
 //----------------------------------------------------------------------------------------------------------------------------
 //variablen.js
@@ -151,10 +31,6 @@ var zuletzt_angeklickt_index = new Array();
 var runden_zaehler;                    
 var aufgedeckte_bilder_in_der_runde;            
 var einstellungsseite_zaehler = 0;        
-
-// ---------------------   START --------------------------------------------
-nach_Spieleinstellungen_fragen();
-
 
 //-----------------------   schreibe_html_ueberschriften ()   ---------------------------
 
