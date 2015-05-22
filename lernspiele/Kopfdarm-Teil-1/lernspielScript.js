@@ -197,7 +197,7 @@ function ausgabe_aktueller_spiel_werte()
                          "Bilder zudecken.   " + punkte_des_spielers[i - 1];
                 }
                 input_elements[0].focus();
-                input_elements[0].color = "#3983ab";
+                input_elements[0].style.color = 'red';
                 //input_elements[0].select();
             }
             else
