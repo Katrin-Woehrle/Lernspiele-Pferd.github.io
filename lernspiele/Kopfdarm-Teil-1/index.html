@@ -197,7 +197,7 @@ function zeichne_html_spiel()
    
     for (i = 1; i <= akt_spieleranzahl; i++)
     {
-        output_fenster.document.write ("<font size=\"-1\">Spieler " + i + ": </font><input type=\"text\" name=\"eingabe_spieler" + i + "\" size=\"2\" readonly></input> \n");
+        output_fenster.document.write ("<font size=\"-1\">Spieler " + i + ": </font><input type=\"text\" name=\"eingabe_spieler" + i + "\" size=\"3\" readonly></input> \n");
     }
  
      output_fenster.document.write ("<font size=3 color=\"red\">Spieler Nr.<input type=\"text\" name=\"input_akt_spieler\" size=\"2\" disabled></input>ist dran! \n </font>");
@@ -238,7 +238,7 @@ function ausgabe_aktueller_spiel_werte()
         {
             if (i == akt_spieler)
             {
-                input_elements[0].size = 30;
+                input_elements[0].size = 25;
                 if (aufgedeckte_bilder_in_der_runde < anzahl_zusammenpassende_bilder)
                 {
                     input_elements[0].value = (aufgedeckte_bilder_in_der_runde + 1) +
