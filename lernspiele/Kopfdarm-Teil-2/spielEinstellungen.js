@@ -48,7 +48,8 @@ function nach_Spieleinstellungen_fragen()
 
     output_fenster.document.write ('<br><input type="button" name="button_SpielStarten" value="Starte das Lernspiel zu Thema 1: Kopfdarm und Schlund Teil 2" onClick="top.starte_spiel();"><br>\n');
     output_fenster.document.write ('<br><input type="button" name="button_BilderZeigen" value="Zeige alle Fragen und Antworten" onClick="top.zeige_bilder();"><br>\n');
-       
+    output_fenster.document.write ('<br><input type="button" name="button_Zurueck" value="Zurück zur Startseite" onClick="history.back()"><br>\n');
+   
     output_fenster.document.write ("</form>\n");
  } 
 
