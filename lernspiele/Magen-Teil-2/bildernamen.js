@@ -1,0 +1,26 @@
+﻿//bildernamen.js
+var headlines = new Array();
+var i = 0;
+var zeige_bild_name = false;
+var max_zusammenpassende_bilder = 2;
+var verdecktes_bild_name = "bilder-teil-2/verdeckt.png";   
+var vordefinierte_bilder_namen = new Array();
+i = 0;
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_10.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_10.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_11.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_11.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_12.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_12.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_13.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_13.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_14.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_14.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_15.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_15.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_16.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_16.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_17.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_17.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_frage_18.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-2/magen_antwort_18.png";

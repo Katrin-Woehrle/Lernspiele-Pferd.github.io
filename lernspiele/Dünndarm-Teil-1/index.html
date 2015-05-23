@@ -1,0 +1,39 @@
+<head>
+ <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Dünndarm Teil 1</title>
+</head>
+
+<script src="bildernamen.js"      type="text/javascript"></script>
+<script src="lernspielScript.js"      type="text/javascript"></script>
+<script src="spielEinstellungen.js"      type="text/javascript"></script>
+<script src="variablen.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+
+// ---------------------   START --------------------------------------------
+nach_Spieleinstellungen_fragen();
+
+//-----------------------   schreibe_html_ueberschriften ()   ---------------------------
+
+function schreibe_html_ueberschriften(title_string)
+{   
+    if (!window.output_fenster)
+    {
+        document.write ("<frameset  cols=\"*\"><frame src=\"frame_leer.htm\" name=\"output_fenster\"></frameset>");
+    }
+
+    output_fenster.document.close();
+    output_fenster.document.open ("text/html", "replace");    
+
+    //output_fenster.document.bgColor = "#A0A0FF";
+    document.title = title_string;
+
+    for (i = 0;   i < headlines.length;   i++)
+    {
+        output_fenster.document.write (headlines[i]);
+    }
+}
+
+</script>
+
+</HTML>

@@ -1,0 +1,24 @@
+﻿//bildernamen.js
+var headlines = new Array();
+var i = 0;
+var zeige_bild_name = false;
+var max_zusammenpassende_bilder = 2;
+var verdecktes_bild_name = "bilder-teil-4/verdeckt.png";   
+var vordefinierte_bilder_namen = new Array();
+i = 0;
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_25.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_25.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_26.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_26.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_27.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_27.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_28.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_28.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_29.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_29.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_30.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_30.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_31.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_31.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_32.png";
+vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_32.png";
