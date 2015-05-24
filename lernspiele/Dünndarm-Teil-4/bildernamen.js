@@ -20,5 +20,3 @@ vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_30.png";
 vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_30.png";
 vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_31.png";
 vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_31.png";
-vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_frage_32.png";
-vordefinierte_bilder_namen[i++] = "bilder-teil-4/duenndarm_antwort_32.png";
