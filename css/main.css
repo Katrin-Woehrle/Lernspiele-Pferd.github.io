@@ -1,0 +1,17 @@
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+
+/* Seite
+/*
+
+.seite {
+  font-size: 115%;
+  text-align: justify;
+  max-width: 42em;
+  padding: 0 1em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
