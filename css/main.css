@@ -6,12 +6,12 @@ body {
   margin-top: 0px;
   font-family: 'Times New Roman', sans-serif;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .beschreibung {
   color: #008080;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .ueberschrift {
@@ -19,7 +19,7 @@ color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 25px; 
+  font-size: 20px; 
   font-family: 'Times New Roman', sans-serif;
 }
 
