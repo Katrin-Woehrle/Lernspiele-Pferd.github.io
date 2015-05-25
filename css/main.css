@@ -2,6 +2,10 @@ body {
   background: url(/2_Pferd_Pferd_Fragezeichen.jpeg);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; 
+  font-family: 'Fjalla One', sans-serif;}
+
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
