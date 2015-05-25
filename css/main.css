@@ -11,6 +11,10 @@ a:visited { color: #a0a; }
   margin-bottom: 2em;
 }
 
+.beschreibung {
+  color: #ff4500;
+}
+
 .ueberschrift {
 color: black;
 }
