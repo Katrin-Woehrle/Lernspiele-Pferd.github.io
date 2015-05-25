@@ -7,6 +7,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%; 
   font-family: 'Times New Roman', sans-serif;}
 
+h1 { margin-bottom: 1em; }
+
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
