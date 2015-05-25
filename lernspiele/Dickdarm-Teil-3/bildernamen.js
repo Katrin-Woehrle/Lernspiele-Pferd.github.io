@@ -20,5 +20,3 @@ vordefinierte_bilder_namen[i++] = "bilder-teil-3/dickdarm_frage_22.png";
 vordefinierte_bilder_namen[i++] = "bilder-teil-3/dickdarm_antwort_22.png";
 vordefinierte_bilder_namen[i++] = "bilder-teil-3/dickdarm_frage_23.png";
 vordefinierte_bilder_namen[i++] = "bilder-teil-3/dickdarm_antwort_23.png";
-vordefinierte_bilder_namen[i++] = "bilder-teil-3/dickdarm_frage_24.png";
-vordefinierte_bilder_namen[i++] = "bilder-teil-3/dickdarm_antwort_24.png";
