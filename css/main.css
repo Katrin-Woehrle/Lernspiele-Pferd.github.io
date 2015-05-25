@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
 }
 
+.seite {
+  text-align: justify;
+}
+
 .extra {
   padding: 20px 100px 30px 200px;
 }
