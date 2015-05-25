@@ -19,6 +19,10 @@ a:visited { color: #a0a; }
   margin-bottom: 2em;
 }
 
+.beschreibung {
+color: #800000;
+}
+
 .seite {
   text-align: justify;
   max-width: 42em;
