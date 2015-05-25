@@ -7,8 +7,7 @@ a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
 .title {
-  font-size: 100%;
-  margin-bottom: 0px;
+  color: red;
 }
 
 .beschreibung {
