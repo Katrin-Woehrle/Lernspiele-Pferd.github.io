@@ -2,15 +2,11 @@ body {
   background: url(/2_Pferd_Pferd_Fragezeichen.jpeg);
 }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
 .title {
   margin-top: 0px;
   font-family: 'Times New Roman', sans-serif;
   font-style: normal;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .beschreibung {
@@ -22,7 +18,7 @@ color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; 
+  font-size: 25px; 
   font-family: 'Times New Roman', sans-serif;
 }
 
