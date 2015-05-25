@@ -8,8 +8,9 @@ a:visited { color: #a0a; }
 
 .title {
   margin-top: 0px;
-  font-size: large; 
   font-family: 'Times New Roman', sans-serif;
+  font-style: normal;
+  font-size: 22px;
 }
 
 .beschreibung {
