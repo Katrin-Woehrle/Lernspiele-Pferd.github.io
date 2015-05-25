@@ -18,3 +18,7 @@ a:visited { color: #a0a; }
   margin: 3em auto 2em;
   line-height: 1.5em;
 }
+
+.extra {
+  padding: 20px 100px 30px 200px;
+}
