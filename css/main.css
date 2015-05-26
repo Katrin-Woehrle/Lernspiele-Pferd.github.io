@@ -1,5 +1,6 @@
 body {
   background: url(/2_Pferd_Pferd_Fragezeichen.jpeg);
+  line-height: 1.5;
 }
 
 .title {
@@ -7,7 +8,6 @@ body {
   font-family: 'Times New Roman', sans-serif;
   font-style: normal;
   font-size: 20px;
-  white-space: nowrap
 }
 
 .beschreibung {
@@ -17,7 +17,6 @@ body {
 .ueberschrift {
 font-size: 20px;
 color: black;
-white-space: nowrap
 }
 
 h1, h2, h3, h4, h5, h6 {
