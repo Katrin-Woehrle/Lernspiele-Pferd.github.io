@@ -1,6 +1,10 @@
 body {
   background: url(/2_Pferd_Pferd_Fragezeichen.jpeg);
-  line-height: 0.8;
+  line-height: 1.0;
+}
+
+seite {
+line-height: 1.0;
 }
 
 .title {
