@@ -1,6 +1,5 @@
 body {
   background: url(/2_Pferd_Pferd_Fragezeichen.jpeg);
-  line-height: 1.0;
 }
 
 seite {
@@ -9,7 +8,7 @@ line-height: 1.0;
 
 .title {
   font-family: 'Times New Roman', sans-serif;
-  font-size: 20px;
+
 }
 
 .beschreibung {
@@ -19,12 +18,10 @@ line-height: 1.0;
 
 .ueberschrift {
 vertical-align:top;
-font-size: 20px;
 color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 15px; 
   font-family: 'Times New Roman', sans-serif;
 }
 
