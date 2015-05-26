@@ -21,8 +21,10 @@ line-height: 1.0;
 }
 
 .ueberschrift {
+margin-top: 0px;
 vertical-align:top;
 color: black;
+margin-bottom: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
