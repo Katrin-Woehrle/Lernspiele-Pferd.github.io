@@ -21,6 +21,7 @@ line-height: 1.0;
 }
 
 .ueberschrift {
+text-decoration: underline;
 vertical-align:top;
 color: black;
 }
