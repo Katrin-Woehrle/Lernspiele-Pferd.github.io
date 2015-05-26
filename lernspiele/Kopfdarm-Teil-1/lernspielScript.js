@@ -1,4 +1,4 @@
-//lernspielScript.js
+﻿//lernspielScript.js
 
 function starte_spiel()
 {
@@ -151,7 +151,7 @@ function zeichne_html_spiel()
    
      output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Beende das Memoryspiel\" onClick=\"top.beende_spiel();\">&nbsp;");
   
-     output_fenster.document.write ("<font size=2 color=\"black\">Thema 1: Kopfdarm, Lernspiel von Katrin Wöhrle</font>");
+     output_fenster.document.write ("<font size=2 color=\"black\">Thema 1: Kopfdarm Teil 1, Lernspiel von Katrin Wöhrle</font>");
 
      output_fenster.document.write ("</form>\n");
 
