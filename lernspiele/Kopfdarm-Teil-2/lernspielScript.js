@@ -151,7 +151,7 @@ function zeichne_html_spiel()
    
      output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Beende das Memoryspiel\" onClick=\"top.beende_spiel();\">&nbsp;");
   
-     output_fenster.document.write ("<font size=2 color=\"black\">Thema 1: Kopfdarm und Schlund Teil 2, Lernspiel von Katrin Wöhrle</font>");
+     output_fenster.document.write ("<font size=2 color=\"black\">Thema 1: Kopfdarm Teil 2, Lernspiel von Katrin Wöhrle</font>");
 
      output_fenster.document.write ("</form>\n");
 
