@@ -8,10 +8,13 @@ line-height: 1.0;
 
 .title {
   font-family: 'Times New Roman', sans-serif;
+  margin-bottom: 0px;
 
 }
 
 .beschreibung {
+  margin-top: 0px;
+  font-size: 20px;
   vertical-align:top;
   color: #008080;
 }
