@@ -8,15 +8,7 @@
  	
 var zeige_bild_name = false;
 
-function Bild_1_aufedecken()
-	{
-		document.write ('<img src="einleitung-ueberschrift.png" height= "200" width="200" border="1" alt="ueberschrift" name="image1" >');
-	}
-		
-function Bild_2_aufedecken()
-	{
-		document.write ('<img src="einleitung-text.png" height= "200" width="200" border="1" alt="text" name="image2" >');
-	}
+
 
 function zeichne_html_spiel()
 	{
@@ -35,8 +27,8 @@ function zeichne_html_spiel()
 
 		function verdeckte_bilder_zeigen()
 		{
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="ueberschrift" name="image 1" onClick="Bild_1_aufdecken()">');
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="text" name="image 2" onClick="Bild_2_aufdecken()">');
+			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="ueberschrift" name="image 1" onClick="bild_1_aufdecken()">');
+			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="text" name="image 2" onClick="bild_2_aufdecken()">');
 	
 		}
 		
@@ -49,6 +41,15 @@ function zeichne_html_spiel()
 	<br>
 	<script language="javascript" type="text/javascript">
 		verdeckte_bilder_zeigen();
+		function bild_1_aufedecken()
+	{
+		document.write ('<img src="einleitung-ueberschrift.png" height= "200" width="200" border="1" alt="ueberschrift" name="image1" >');
+	}
+		
+function bild_2_aufedecken()
+	{
+		document.write ('<img src="einleitung-text.png" height= "200" width="200" border="1" alt="text" name="image2" >');
+	}
 	</script>
 	<br>
 	<br>
