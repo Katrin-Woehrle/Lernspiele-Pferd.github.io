@@ -141,7 +141,9 @@ function show_hidden_image (clicked_image)
         						alt_text = "Bild_" + (i+1) + ":_" + vordefinierte_bilder_namen[i];
         						document.write ('<img src="' + vordefinierte_bilder_namen[i] + '" height= "200" width="200" border="1" alt="' + alt_text + '" name="image' + i + '" >');
     						}
+			document.write ('<img src="' einleitung-ueberschrift_1.png '" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
 			document.write ('<img src="' + verdecktes_bild_name + '" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
+	
 		}
 	</script> 
   </head>
