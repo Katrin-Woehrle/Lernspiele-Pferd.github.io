@@ -50,9 +50,24 @@ var einstellungsseite_zaehler = 0;
         					document.write ('<img src="' + verdecktes_bild_name + '" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
     					}
 		}
+		
+		function zeige_bilder()
+			{    
+				schreibe_html_ueberschriften("Memoryspiel: Bilder anzeigen");
+				output_fenster.document.write ("<form name=\"form_bilder_anzeigen\">\n");
+				output_fenster.document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
+  				output_fenster.document.write ("</form>\n");
+					var alt_text;                              
+					for (i = 0; i < anzahl_der_vordefinierten_bilder; i++)
+    						{         
+        						alt_text = "Bild_" + (i+1) + ":_" + vordefinierte_bilder_namen[i];
+        						output_fenster.document.write ('<img src="' + vordefinierte_bilder_namen[i] + '" height= "200" width="200" border="1" alt="' + alt_text + '" name="image' + i + '" >');
+    						}
+				output_fenster.document.write ("</form>\n");
+			}
 	</script> 
   </head>
-    <body onload=zeichne_html_spiel()>
+    <body onload=zeige_bilder()>
 	<a href="http://lernspiele-pferd.github.io/">Zurück zur Startseite</a>
 	<br>
 	<br>
