@@ -24,7 +24,8 @@ var akt_spieleranzahl = 1;
 var akt_spieler;                        
 var anzahl_zusammenpassende_bilder = max_zusammenpassende_bilder;   
 var set_matching_images = anzahl_zusammenpassende_bilder;  
-var zuletzt_angeklickt_index = new Array();  
+var zuletzt_angeklickt_index = new Array();
+var aufgedeckte_bilder_in_der_runde;  
 var einstellungsseite_zaehler = 0;
 
 function zeichne_html_spiel()
@@ -107,7 +108,7 @@ function show_hidden_image (clicked_image)
     {       
         for (i = 0;   i < anzahl_zusammenpassende_bilder;   i++)
         {
-            output_fenster.document.images[zuletzt_angeklickt_index[i]].src = verdecktes_bild_name;
+            document.images[zuletzt_angeklickt_index[i]].src = verdecktes_bild_name;
             zuletzt_angeklickt_index[i] = -1;
         }
 
