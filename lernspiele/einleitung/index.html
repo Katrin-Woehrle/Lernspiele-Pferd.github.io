@@ -31,7 +31,7 @@ var einstellungsseite_zaehler = 0;
 		function zeige_bilder()
 			{    
 				document.write ("<form name=\"form_bilder_anzeigen\">\n");
-				document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Zurück zu den Einstellungen\" onClick=\"top.nach_Spieleinstellungen_fragen();\">\n");
+				document.write ("<input type=\"button\" name=\"button_Zurueck\" value=\"Zurück zur Startseite\" onClick=\"history.back();\">\n");
   				document.write ("</form>\n");
 					var alt_text;                              
 					for (i = 0; i < anzahl_der_vordefinierten_bilder; i++)
