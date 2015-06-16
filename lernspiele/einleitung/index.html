@@ -5,28 +5,6 @@
         <title>Einleitung</title>
  	<link rel="stylesheet" href="/css/main.css"> 
  	<script language="javascript" type="text/javascript">
-		var zeige_bild_name = false;
-		var max_zusammenpassende_bilder = 2;
-		var verdecktes_bild_name = "verdeckt.png";   
-		var vordefinierte_bilder_namen = new Array();
-		i = 0;
-		vordefinierte_bilder_namen[i++] = "einleitung-ueberschrift_1.png";
-		vordefinierte_bilder_namen[i++] = "einleitung-text_1.png";
-		
-//variablen.js
-
-var anzahl_der_vordefinierten_bilder = vordefinierte_bilder_namen.length;
-var verwendete_bilder = anzahl_der_vordefinierten_bilder;
-var anzahl_der_bilder;                 
-var gemischte_bilder = new Array();    
-var indexes_array = new Array();       
-var akt_spieleranzahl = 1;                   
-var akt_spieler;                        
-var anzahl_zusammenpassende_bilder = max_zusammenpassende_bilder;   
-var set_matching_images = anzahl_zusammenpassende_bilder;  
-var zuletzt_angeklickt_index = new Array();
-var aufgedeckte_bilder_in_der_runde;  
-var einstellungsseite_zaehler = 0;
 
 function zeichne_html_spiel()
 	{
@@ -43,27 +21,6 @@ function zeichne_html_spiel()
     				}
 	}
 
-		function zeige_bilder()
-			{    
-				document.write ("<form name=\"form_bilder_anzeigen\">\n");
-				document.write ("<input type=\"button\" name=\"button_Zurueck\" value=\"Zurück zur Startseite\" onClick=\"history.back();\">\n");
-  				document.write ("</form>\n");
-					var alt_text;                              
-					for (i = 0; i < anzahl_der_vordefinierten_bilder; i++)
-    						{         
-        						alt_text = "Bild_" + (i+1) + ":_" + vordefinierte_bilder_namen[i];
-        						document.write ('<img src="' + vordefinierte_bilder_namen[i] + '" height= "200" width="200" border="1" alt="' + alt_text + '" name="image' + i + '" >');
-    						}
-				document.write ("</form>\n");
-			}
-			
-		function verdeckte_bilder_zeigen()
-		{
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="ueberschrift" name="image 1" onClick="Bild_1_aufdecken()">');
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="text" name="image 2" onClick="Bild_2_aufdecken()">');
-	
-		}
-		
 		function Bild_1_aufedecken()
 		{
 			document.write ('<img src="einleitung-ueberschrift.png" height= "200" width="200" border="1" alt="ueberschrift" name="image1" >');
@@ -73,6 +30,15 @@ function zeichne_html_spiel()
 		{
 			document.write ('<img src="einleitung-text.png" height= "200" width="200" border="1" alt="text" name="image2" >');
 		}
+	
+		function verdeckte_bilder_zeigen()
+		{
+			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="ueberschrift" name="image 1" onClick="Bild_1_aufdecken()">');
+			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="text" name="image 2" onClick="Bild_2_aufdecken()">');
+	
+		}
+		
+	
 	</script> 
   </head>
     <body>
