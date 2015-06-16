@@ -8,5 +8,5 @@ var vordefinierte_bilder_namen = new Array();
 
 i = 0;
 
-vordefinierte_bilder_namen[i++] = "einleitung_frage_1.png";
-vordefinierte_bilder_namen[i++] = "einleitung_antwort_1.png";
+vordefinierte_bilder_namen[i++] = "einleitung-ueberschrift_1.png";
+vordefinierte_bilder_namen[i++] = "einleitung_text_1.png";
