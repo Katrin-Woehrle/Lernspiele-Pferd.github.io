@@ -135,7 +135,7 @@ function show_hidden_image (clicked_image)
 			
 		function bilder_zeigen()
 		{
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="ueberschrift" name="image 1" onClick="src='einleitung-ueberschrift.png'">');
+			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="ueberschrift" name="image 1" onClick="document.write('<img src='einleitung-ueberschrift.png'>')">');
 			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="text" name="image 2" onClick="top.show_hidden_image(this)">');
 	
 		}
