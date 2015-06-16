@@ -25,7 +25,28 @@ var akt_spieler;
 var anzahl_zusammenpassende_bilder = max_zusammenpassende_bilder;   
 var set_matching_images = anzahl_zusammenpassende_bilder;  
 var zuletzt_angeklickt_index = new Array();  
-var einstellungsseite_zaehler = 0;        
+var einstellungsseite_zaehler = 0;
+
+function zeichne_html_spiel()
+	{
+		document.write ("<form name=\"form_Game\">\n");
+      		document.write ("<font size=5 color=\"red\">Wer ist dran? Spieler Nr.<input type=\"text\" name=\"input_akt_spieler\" size=\"2\" disabled></input> \n </font>");
+   		document.write ("<input type=\"button\" name=\"button_BeendeSpiel\" value=\"Beende das Memoryspiel\" onClick=\"top.beende_spiel();\">\n");
+  		document.write ("</form>\n");
+		var alt_text;                              
+    			for (i = 0; i < anzahl_der_bilder; i++)
+    				{         
+        				alt_text = "Memoryteil_" + (i+1);
+        				if (zeige_bild_name == true)
+         					{
+        						alt_text += ":_";    
+        						alt_text += gemischte_bilder[indexes_array[i]];
+         					}
+        	document.write ('<img src="' + verdecktes_bild_name + '" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
+    	}
+
+}
+
 
 	
 		function zeige_bilder()
