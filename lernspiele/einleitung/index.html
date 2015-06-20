@@ -14,11 +14,6 @@ function zeichne_html_spiel()
     			for (i = 0; i < 2; i++)
     				{         
         				alt_text = "Memoryteil_" + (i+1);
-        				if (zeige_bild_name == true)
-         					{
-        						alt_text += ":_";    
-        						alt_text += gemischte_bilder[indexes_array[i]];
-         					}
         				document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
     				}
 	}
@@ -52,6 +47,7 @@ function zeichne_html_spiel()
 	<br>
 	<br>
 	<br>
+	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: none;" name="image 1"/>
 	<br>
 	<br>
 	<br>
