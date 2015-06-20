@@ -7,12 +7,11 @@
  	<script language="javascript" type="text/javascript">
 	function zeige_verdecktes_Bild()
 		{
-			clicked_index = parseInt(clicked_image.name.substr(5,10));
-			alert('clicked_index');
+			
 		}
 	function zeige_Bild()
 		{
-			
+		document.write('<img src="einleitung-ueberschrift.png" height= "200" width="200" border="1" style="display: none" alt="einleitung" name="ueberschrift" >');
 		}
 	</script> 
   </head>
@@ -26,6 +25,8 @@
 	zeige_verdecktes_Bild();
 	</script> 
 	<br>
+	<p><a href="#" onclick="zeige_Bild('zeigen');">Zeigen</a></p> 
+	<div id="div1" style="display: none;">This is the content</div> 
 	<br>
 	<div id="verdeckt"> 
 	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: visible" name="image 1"/>
