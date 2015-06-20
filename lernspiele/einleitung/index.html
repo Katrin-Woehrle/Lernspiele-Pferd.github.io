@@ -27,7 +27,14 @@ function zeichne_html_spiel()
 		
 		function bild_1_aufdecken()
 			{
-				document.images['imageName'].style.visibility = hidden;
+				if (document.images['image1'].style.visibility == hidden;)
+				{ 
+				  	document.images['image1'].style.visibility = visible;
+				}
+				else
+				{
+					document.images['image1'].style.visibility = hidden;
+				}
 			}
 		
 		function bild_2_aufdecken()
@@ -49,7 +56,7 @@ function zeichne_html_spiel()
 	<br>
 	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: visible" name="image 1"/>
 	<img src="ueberschrift-text.png" height= "200" width="200" border="1" style="display: none;" alt="text">
-	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" name="image 2"/>
+	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: visible" name="image 2"/>
 	<img src="einleitung-text.png" height= "200" width="200" border="1" style="display: none;" alt="text">
 	<br>
 	<br>
