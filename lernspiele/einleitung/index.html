@@ -13,7 +13,7 @@ function zeichne_html_spiel()
 		var alt_text;                              
     			for (i = 0; i < 2; i++)
     				{         
-        				alt_text = "Memoryteil_" + (i+1);
+        				alt_text = "Spielkarte" + (i+1);
         				document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
     				}
 	}
@@ -42,7 +42,6 @@ function zeichne_html_spiel()
 				document.write ('<img src="einleitung-text.png" height= "200" width="200" border="1" alt="text">');
 			}
 			
-			verdeckte_bilder_zeigen();	
 	</script> 
   </head>
     <body>
@@ -51,6 +50,9 @@ function zeichne_html_spiel()
 	<br>
 	<br>
 	<br>
+	<script language="javascript" type="text/javascript">
+	verdeckte_bilder_zeigen();
+	</script> 
 	<br>
 	<br>
 	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: visible" name="image 1"/>
