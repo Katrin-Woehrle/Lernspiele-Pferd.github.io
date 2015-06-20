@@ -5,43 +5,7 @@
         <title>Einleitung</title>
  	<link rel="stylesheet" href="/css/main.css"> 
  	<script language="javascript" type="text/javascript">
-
-var zeige_bild_name = false;
-
-function zeichne_html_spiel()
-	{
-		var alt_text;                              
-    			for (i = 0; i < 2; i++)
-    				{         
-        				alt_text = "Spielkarte" + (i+1);
-        				document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="' + alt_text + '" name="image' + i + '" onClick="top.show_hidden_image(this)">');
-    				}
-	}
-
-		function verdeckte_bilder_zeigen()
-		{
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" name="image 1" onClick="bild_1_aufdecken()">');
-			document.write ('<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" name="image 2" onClick="bild_2_aufdecken()">');
 	
-		}
-		
-		function bild_1_aufdecken()
-			{
-				if (document.images['image1'].style.visibility == hidden)
-				{ 
-				  	document.images['image1'].style.visibility = visible;
-				}
-				else
-				{
-					document.images['image1'].style.visibility = hidden;
-				}
-			}
-		
-		function bild_2_aufdecken()
-			{
-				document.write ('<img src="einleitung-text.png" height= "200" width="200" border="1" alt="text">');
-			}
-			
 	</script> 
   </head>
     <body>
@@ -51,17 +15,22 @@ function zeichne_html_spiel()
 	<br>
 	<br>
 	<script language="javascript" type="text/javascript">
-	verdeckte_bilder_zeigen();
 	</script> 
 	<br>
 	<br>
+	<div id="verdeckt"> 
 	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: visible" name="image 1"/>
-	<img src="einleitung-ueberschrift.png" height= "200" width="200" border="1" style="display: none;" alt="text">
 	<img src="verdeckt.png" height= "200" width="200" border="0" alt="verdeckt" style="display: visible" name="image 2"/>
-	<img src="einleitung-text.png" height= "200" width="200" border="1" style="display: none;" alt="text">
+	</div>
+	<br>
+	<div id="zeigen">
+	<img src="einleitung-ueberschrift.png" height= "200" width="200" border="1" style="display: none" alt="text">
+	<img src="einleitung-text.png" height= "200" width="200" border="1" style="display: none" alt="text">
+	</div>
 	<br>
 	<br>
 	<br>
+	
 	<br>
 	<br>
 	<br>
