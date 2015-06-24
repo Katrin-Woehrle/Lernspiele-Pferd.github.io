@@ -194,7 +194,7 @@ function ausgabe_aktueller_spiel_werte()
                 else
                 {
                     input_elements[0].value =
-                         "Bilder zudecken.   " + punkte_des_spielers[i - 1];
+                         "Bilder zudecken.   " + punkte_des_spielers[i - 1] + " Paare gefunden";
                 }
                 input_elements[0].focus();
                 input_elements[0].style.color = 'blue';
