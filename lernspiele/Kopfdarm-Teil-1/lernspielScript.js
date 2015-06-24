@@ -189,7 +189,7 @@ function ausgabe_aktueller_spiel_werte()
                 if (aufgedeckte_bilder_in_der_runde < anzahl_zusammenpassende_bilder)
                 {
                     input_elements[0].value = (aufgedeckte_bilder_in_der_runde + 1) +
-                         ". Bild aufdecken!      " + punkte_des_spielers[i - 1] + "Paare gefunden";
+                         ". Bild aufdecken!  " + punkte_des_spielers[i - 1] + " Paare gefunden";
                 }
                 else
                 {
