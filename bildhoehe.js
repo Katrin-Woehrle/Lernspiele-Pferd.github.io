@@ -1,3 +1,9 @@
+function init()
+{
+	document.background.style.height = getClientHeight;
+}
+
+
 function getBrowser()
    	{
 		if (navigator.appName == "Netscape")
