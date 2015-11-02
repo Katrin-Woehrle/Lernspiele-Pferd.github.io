@@ -1,6 +1,6 @@
 body {
   background: url(/2_Pferd_Pferd_Fragezeichen.jpg) no-repeat left top;
-  background-size: cover;
+  height: getClientHeight();
 }
 
 seite {
