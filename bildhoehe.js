@@ -1,6 +1,6 @@
 function init()
 {
-	window.document.body.height = getClientHeight();
+	document.getElementById("seite").style.height = getClientHeight();
 }
 
 
