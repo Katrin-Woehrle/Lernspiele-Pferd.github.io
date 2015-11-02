@@ -1,6 +1,6 @@
 function init()
 {
-	document.background.height == getClientHeight;
+	window.document.body.height = getClientHeight();
 }
 
 
