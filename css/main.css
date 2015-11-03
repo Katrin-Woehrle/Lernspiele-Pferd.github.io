@@ -4,7 +4,7 @@
 
 .seite {
 line-height: 1.0;
-
+position: absolute;
 }
 
 .title {
