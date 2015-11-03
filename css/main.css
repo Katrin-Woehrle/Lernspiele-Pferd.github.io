@@ -2,8 +2,9 @@
   background: url(/2_Pferd_Pferd_Fragezeichen.jpg) no-repeat left top;
 }
 
-seite {
+.seite {
 line-height: 1.0;
+
 }
 
 .title {
