@@ -1,5 +1,6 @@
 body {
   background: url(../fragezeichenpferd.jpg) no-repeat;
+  background-size: 80% auto;
 }
 
 .seite {
